@@ -1,0 +1,45 @@
+Cloth Simulation with Finite Element Method(FEM).
+
+Note: this part of project is designed for both Mac and Linux environment.
+
+Compile: Simply type "make".
+
+Run: "./clothSim" will enter the default mode "-0".
+	 You could also add a flag to indicate the mode. Ex. "./clothSim -1".
+
+Output: You can output the location and normal of the cloth in an .obj file:
+		1. Create a directory named "frames" in the current directory.
+		2. Run the program with "./clothSim -w -x", with x being the scene you want to run.
+		3. Then every 10th of the frames will be outputed.
+		4. If you want to change the nth of frames, you can change "outputFrame" variable in line 36 of the clothSim.cpp file.
+
+		You can output each picture frame:
+		1. Create a directory named "images" in the current directory.
+		2. While the program is running, push "o" to start output frame, push "o" again to turn the output off. 
+
+A detailed manu is below.
+-0: (default) Hung cloth.
+-1: Hung cloth with movable ball (use arrow keys to control).
+-2: Dropped cloth with air resistance over a ball.
+-3: Dropped cloth with air resistance over a cube.
+-4: Dropped cloth with air resistance over a table (bit cube).
+-5: Dropped cloth with air resistance over a stick (long cube).
+-6: Dropped cloth with air resistance on the floor.
+-----------------------------------------------------------------------------
+YOU COULD ALSO USE THE RIGHT CLICK MENU TO SELECT SCENE WHILE IN THE PROGRAM.
+-----------------------------------------------------------------------------
+Supported operations:
+0 ~ 6: switch between different scene.
+w: Rotate Camera.
+s: Rotate Camera.
+a: Rotate Camera.
+d: Rotate Camera.
+p: Pause.
+o: Outpu frames screenshot.
+k: turn on/off wind.
+l: turn on/off line mode.
+b: turn on/off ball mode.
+c: turn on/off shade ball with force (ball mode must be on).
+r: reset the state of the current scene.
+f: turn on/off full screen mode.
+q: quit program.
